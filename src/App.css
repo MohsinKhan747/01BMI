@@ -1,0 +1,149 @@
+/* General reset and font */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #212528;
+  color: #922525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(139, 50, 50, 0.1);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border-top: 6px solid #5187be;
+   border-bottom: 6px solid #c60000;
+}
+
+/* Heading */
+.container h2 {
+  margin-bottom: 1.5rem;
+  color: #699cd0;
+  font-size: 1.75rem;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2e86c1;
+}
+
+.input-pair {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.input-pair input[type="number"] {
+  flex: 1;
+}
+
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 0.6rem 0.4rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+.input-group input[type="number"]:focus {
+  border-color: #5dade2;
+  outline: none;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #178fa4;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #000507;
+}
+
+.reset-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.reset-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Result section */
+.result {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.result h3 {
+  color: #28b463;
+  font-size: 1.6rem;
+}
+
+.result p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .input-pair {
+    flex-direction: column;
+  }
+}
